@@ -1,0 +1,103 @@
+body {
+    background: linear-gradient(lightgray, gray);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    }
+    .form {
+    font-size: 14px;
+    border-radius: 6px;
+    line-height: 1.5;
+    padding: 5px 10px;
+    transition: box-shadow 100ms ease-in, border 100ms ease-in, background-color 100ms ease-in;
+    border: 2px solid #dee1e2;
+    color: rgb(14, 14, 16);
+    background: #dee1e2;
+    display: block;
+    height: 36px;
+    :hover {
+    border-color: #ccc;
+    }
+    :focus{
+    border-color: #9147ff;
+    background: #fff;
+    }
+    }
+    .btn {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    background-color: rgba(255,255,255,0.2);
+    }
+    table {
+    width: 800px;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    th,
+    td {
+    padding: 15px;
+    background-color: rgba(255,255,255,0.2);
+    color: #fff;
+    }
+    th {
+    text-align: left;
+    }
+    thead {
+    th {
+    background-color: #55608f;
+    }
+    }
+    tbody {
+    tr {
+    &:hover {
+    background-color: rgba(255,255,255,0.3);
+    }
+    }
+    td {
+    position: relative;
+    &:hover {
+    &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -9999px;
+    bottom: -9999px;
+    background-color: rgba(255,255,255,0.2);
+    z-index: -1;
+    }
+    }
+    }
+    }
+    h2 {
+    text-transform: uppercase;
+    color: #0000;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    background:
+    repeating-radial-gradient(#000 0 0.0001%,#fff 0 0.0002%) 50% 0/2500px 2500px,
+    repeating-conic-gradient(#000 0 0.0001%,#fff 0 0.0002%) 50% 50%/2500px 2500px;
+    background-blend-mode: difference;
+    mix-blend-mode: lighten;
+    -webkit-background-clip: text;
+    background-clip: text;
+    }
+    hr {
+    margin: 1.5em 0;
+    text-align: center;
+    border: none;
+    }
